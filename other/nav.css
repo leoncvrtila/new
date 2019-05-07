@@ -1,0 +1,66 @@
+﻿nav {
+	
+	background: rgba(82, 85, 100, 0.47);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 5;
+	transition: 1s;
+	width: 100%;
+	top:25px;
+	
+}
+
+nav:hover {background:#525564;}
+
+.nav {
+	
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	
+}
+
+nav a {
+	
+	font-size: 16;
+	padding: 10;
+	font-weight: 900;
+	border-right: 2px dotted #cfccc9;
+}
+
+nav a:last-child {border-right: 0px dotted white;}
+
+#logo {
+	
+	background-image: url(http://leon.esy.es/images/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    width: 100px;
+    height: 100px;
+	transition:1s;
+	
+}
+
+#info {
+	
+	width: 100%;
+    height: 25px;
+    background: #74828f;
+    position: fixed;
+    z-index: 5;
+	text-align: right;
+	font-size:14px;
+	
+}
+
+#info p {padding:5px;color:#f3f2f1;}
+
+
+
+
+
+
+

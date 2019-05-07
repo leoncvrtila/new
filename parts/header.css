@@ -1,0 +1,329 @@
+﻿
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**SLIDER**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#slider {
+
+	width: 100%;
+	position: relative;
+    top: -100px;
+	
+}
+
+.slider {
+	
+	display: -webkit-box;
+    overflow: hidden;
+	
+	
+}
+
+.slider > div {
+	
+
+	
+}
+
+.links {
+	
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	
+}
+
+#image {
+	
+	height: 900px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out;
+	visibility: visible;
+
+}
+
+
+#slider:hover #image {
+	
+	background-size: 105%;
+
+	
+}
+
+	
+.img1 {background-image: url("http://leon.esy.es/images/img1.jpg");}
+
+.img2 {background-image: url("http://leon.esy.es/images/img2.jpg");}
+
+.img3 {background-image: url("http://leon.esy.es/images/img3.jpg");}
+
+.img4 {background-image: url("http://leon.esy.es/images/img4.jpg");}
+
+.img5 {background-image: url("http://leon.esy.es/images/img5.jpg");}
+
+.img6 {background-image: url("http://leon.esy.es/images/img6.jpg");}
+
+/*====================SLIDER TEXT====================*/
+
+.slider-text {
+	
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+	background: rgba(255, 255, 255, 0.19);
+	
+}
+
+/*====================SLIDER TEXT H2 0====================*/
+
+.slider-text-h2 {
+	
+	display: flex;
+    flex-direction: column;
+	position: relative;
+    left: -100%;
+	visibility: hidden;
+	transition: 800ms;
+	
+}
+
+.slider-text-h2-col {
+	
+	display: flex;
+	justify-content: space-around;
+    width: 45%;	
+		
+}
+
+.slider-text-h2 h2 {
+	
+	font: 70px 'Roboto', sans-serif;
+	padding: 10px;	
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #2e2e2e;
+    text-transform: uppercase;
+	border-bottom: 5px solid #2e2e2e;
+    width: 45%;
+
+}
+
+.slider-text-h2 p {
+	
+	text-align: -webkit-left;
+	padding: 5px;
+	font-weight: 300;
+	
+}
+
+.slider-text-h2-tick {
+	
+	display: flex;
+    justify-content: flex-start;
+	padding: 15px;
+	
+}
+
+.tick {
+	
+	background-image: url("http://leon.esy.es/images/tick.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	
+}
+
+/*====================SLIDER TEXT P 0====================*/
+
+.slider-text-p {
+	
+	position: relative;
+    right: -200%;
+	visibility: hidden;
+	z-index:-1;
+	transition: 400ms;
+}
+
+
+.slider-text-p p:nth-child(1) {
+	
+	font: 50px 'Roboto', sans-serif;
+	font-weight:lighter;
+	padding: 1px;	
+	color: white;
+	line-height: 1.5;
+    letter-spacing: 0.5;
+	border-bottom: 2px solid #2e2e2e;
+    width: 50%;
+    position: relative;
+    left: 50%;
+	
+}
+
+.slider-text-p p:nth-child(2) {
+	
+	font: 15px 'Roboto', sans-serif;
+    width: 45%;
+    position: relative;
+    left: 50%;
+    text-align: -webkit-right;
+
+}
+
+.slider-text-p font {color: #2e2e2e;font-weight:500;}
+
+
+/*====================SLIDER TEXT H2 1====================*/
+
+.slider-text-h2-1,
+.slider-text-p-1,
+.slider-text-line
+{
+	transition: 800ms;
+	-webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    -ms-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation: fadein 5s;
+	visibility:hidden;
+	position:relative;
+	top: 50px;
+	
+}
+
+.slider-text-h2-1 h2 {
+	
+	font: 75px 'Roboto', sans-serif;
+	padding: 15px;	
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #2e2e2e;
+    text-transform: capitalize;
+	margin-top: 20px;	
+	
+}
+
+
+/*====================SLIDER TEXT P 1====================*/
+
+.slider-text-p-1 {display: flex;justify-content: center;}
+
+.slider-text-p-1 p {
+	
+	font: 35px 'Roboto', sans-serif;
+	font-weight:300;
+	padding: 15px;	
+	text-transform: uppercase;
+	color: white;
+	line-height: 1.5;
+    letter-spacing: 10px;
+	
+}
+
+
+/*====================SLIDER TEXT LINE====================*/
+
+.slider-text-line {
+	
+	width: 15%;
+	height: 4px;
+	background:#2e2e2e;	
+	
+}
+
+/*====================SLIDER ARROWS====================*/
+
+.arrow {
+	
+	display: flex;
+    justify-content: space-between;;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+	z-index: 2;
+}
+
+.arrow > div {width: 20%;}
+
+.left:hover {
+
+	background-size: 80% 60%;
+	background: url(http://leon.esy.es/images/left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(82, 85, 100, 0.39);
+	cursor: pointer;
+	
+}
+
+.right:hover {
+
+	background-size: 80% 60%;
+	background: url(http://leon.esy.es/images/right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(82, 85, 100, 0.39);
+	cursor: pointer;
+	
+}
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**ANIMATIONS**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,543 @@
+﻿/*
+==================================================================================================================================================================================
+
+PARTS OF WEBSITE:
+====================
+> ABOUT
+> BG DIVIDER
+> WORK
+> TIMELINE 
+> TEAM
+> GALLERY
+
+====================================================================================================================================================================================
+*/
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**ABOUT**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#about {
+	
+	background: #F3F2F1;
+	display: flex;
+	padding: 20px;
+    margin-bottom: 12%;
+    margin-top: 0%;
+	visibility: hidden;
+	-webkit-animation: fadein 4s; 
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s; 
+    -o-animation: fadein 4s; 
+    animation: fadein 4s;
+	animation-fill-mode: forwards;
+	position: relative;
+    top: -40px;
+	/*transition:4s;*/
+	/*transition-timing-function: ease-in-out;*/
+	
+}
+
+#about div {width: 50%;transition:1s;}
+
+#about_img {
+	
+	display: flex;
+    justify-content: center;
+	
+}
+
+svg {height: 500px;}
+
+path {
+	
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: show 8s linear alternate;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes show {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**BG DIVIDER**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#bg_divider {
+	
+	background-image: url("http://leon.esy.es/images/bg_divider.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150px;
+    width: 100%;
+	
+}
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**WORK**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#work {background: #dbdbdb;}
+
+#work > div {
+	
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+    right: -100%;
+	
+}
+
+#work-heading {
+	
+	position: relative;
+    left: -100%;
+	transition-timing-function: ease-in-out;
+	
+}
+
+.work-feature {
+	
+	width: 18%;
+	padding: 20px;
+	margin-bottom: 10%;
+	border: 1px dotted #b9b9b9;
+	transition:300ms;
+	transition-timing-function: ease-in-out;
+	
+}
+
+.work-feature:hover {
+	
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.29);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.29);
+	border: 1px dotted #2e2e2e;
+    background: whitesmoke;
+	/*-ms-transform: scale(1.1,1.1); 
+    -webkit-transform: scale(1.1,1.1); 
+    transform: scale(1.1,1.1); */
+}
+
+#work h1 {
+	
+	text-align:center;
+	padding-top: 10%;
+    padding-bottom: 2%;
+	
+}
+
+.work-feature h2 {text-align:center;}
+
+.work-feature-img {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    height: 150px;
+    width: 100%;
+	
+}
+
+#work-feature-1-img {background-image: url("http://leon.esy.es/images/crown.svg");}
+#work-feature-2-img {background-image: url("http://leon.esy.es/images/target.svg");}
+#work-feature-3-img {background-image: url("http://leon.esy.es/images/badge.svg");}
+#work-feature-4-img {background-image: url("http://leon.esy.es/images/rocket.svg");}
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**TIMELINE**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#timeline {
+	
+	background: #F3F2F1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+#timeline-heading {
+	
+	position: relative;
+    right: -100%;
+	
+}
+
+#timeline-all {
+	
+	position: relative;
+    left: -100%;
+	width: 1000px;
+    margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 15%;
+	
+}
+
+#timeline h1 {
+	
+	text-align:center;
+	padding-top: 10%;
+    padding-bottom: 4%;
+	
+}
+
+#timeline-year {
+	
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 15px;
+	
+}
+
+#timeline-part {
+	
+	display: flex;
+	justify-content: center;
+	
+}
+
+.timeline-part {
+	
+	width:100%;
+	
+}
+
+.line {
+	
+	background: #C25B56;
+	width:100%;
+	height:5px;
+	
+}
+
+.circle {
+	
+	position: relative;
+    bottom: -16;
+	margin: 0 auto;
+	background: #C25B56;
+	width:30px;
+	height:30px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	transition: 500ms;
+	
+}
+
+.circle:hover {
+	
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
+	
+}
+
+#timeline-description  {
+	
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	
+}
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**TEAM**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#team {
+	
+	background: #dbdbdb;
+	
+}
+
+#team > div {
+	
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+#team h1 {
+	
+	text-align:center;
+	padding-top: 10%;
+    padding-bottom: 4%;
+	
+}
+
+#team h2 {text-align:center;}
+
+#team-heading {
+	
+	visibility: hidden;
+	transition-timing-function: ease-in-out;
+	position: relative;
+	bottom: -40px; 
+	-webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    -ms-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation: fadein 5s;
+	animation-fill-mode: forwards;
+	
+}
+
+.team-feature {
+	
+	width: 22%;
+	margin: 20px;
+	margin-bottom: 15%;
+	background: white;
+	visibility: hidden;
+	transition-timing-function: ease-in-out;
+	position: relative;
+	bottom: -40px; 
+	-webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    -ms-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation: fadein 5s;
+	animation-fill-mode: forwards;
+	
+}
+
+.team-feature-heading {
+	
+	transition:300ms;
+	border-left: 1px dotted white;
+	border-right: 1px dotted white;
+	border-bottom: 1px dotted white;
+}
+
+.team-feature:hover .team-feature-heading {
+	
+	border-left: 1px dotted #2e2e2e;
+	border-right: 1px dotted #2e2e2e;
+	border-bottom: 1px dotted #2e2e2e;
+	
+}
+
+.team-feature-img {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    width: 100%;
+	transition: 500ms;
+
+}
+
+.team-feature-img:hover {background-size: 110%;}
+
+
+#team-feature-1-img {background-image: url("http://leon.esy.es/images/team-feature-1-img.jpg");}
+#team-feature-2-img {background-image: url("http://leon.esy.es/images/team-feature-2-img.jpg");}
+#team-feature-3-img {background-image: url("http://leon.esy.es/images/team-feature-3-img.jpg");}
+#team-feature-4-img {background-image: url("http://leon.esy.es/images/team-feature-4-img.jpg");}
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**CONTACT**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#contact {
+	
+	background-image: url("http://leon.esy.es/images/contact.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+	padding: 30px;
+	
+}
+
+#contact:hover .contact {opacity:1;}
+
+#contact-heading h1{
+	
+	text-align: center;
+	color: white;
+	margin-top: 5%;
+	
+}
+
+.contact {
+	
+	width:60%;
+	height:600px;
+	overflow:hidden;
+	margin: 0 auto;
+	opacity: 0.5;
+	transition: 500ms;
+	margin-bottom: 10%;
+	
+}
+
+/*TABS*/
+
+#tabs {
+	
+	width:60%;
+	margin: 0 auto;
+	display:flex;
+	justify-content:center;
+	background: #74828F;
+	color: white;
+	text-align: center;
+	opacity: 0.5;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#contact:hover #tabs {opacity:1;}
+
+#tab1 {background:#525564;}
+
+.tab {
+	
+	width:50%;
+	height: 50px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	
+}
+
+.tab:hover {background: #525564;}
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**GALLERY**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#gallery {
+	
+	background: #74828F;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.gallery-img {
+	
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+	width: 10%;
+	height: 100px;
+	
+}
+
+#gallery-1-img {background-image: url("http://leon.esy.es/images/gallery-1-img.png");}
+#gallery-2-img {background-image: url("http://leon.esy.es/images/gallery-2-img.png");}
+#gallery-3-img {background-image: url("http://leon.esy.es/images/gallery-3-img.png");}
+#gallery-4-img {background-image: url("http://leon.esy.es/images/gallery-4-img.png");}
+#gallery-5-img {background-image: url("http://leon.esy.es/images/gallery-5-img.png");}
+#gallery-6-img {background-image: url("http://leon.esy.es/images/gallery-6-img.png");}
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**ANIMATIONS**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+.animation	{
+ -webkit-animation: fadein 4s; 
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s; 
+    -o-animation: fadein 4s; 
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+

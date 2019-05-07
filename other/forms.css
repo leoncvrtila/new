@@ -1,0 +1,209 @@
+﻿/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**SLIDER BTNS**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+.links form {
+	
+	margin: 10px;
+	position: relative;
+	bottom: 50px;
+	z-index: 3;	
+}
+
+input[type="radio"] {
+	
+	/*height: 20px; 
+	width: 20px;*/
+	visibility: hidden;
+	
+	
+	}
+
+input[type="radio"]:hover {cursor: pointer;}
+
+.links label {
+	
+
+	background:  #cfccc9;
+	display: -webkit-inline-box;
+    width: 20px;
+    height: 4px;
+	border: 2px solid #cfccc9;
+
+	
+}
+
+.links label:hover {
+	
+	border: 2px solid #f3f2f1;
+	background:  #f3f2f1;
+	cursor: pointer;
+	
+}
+
+.links input[type="radio"]:checked + label {
+	
+	background: #525564;
+	border: 2px solid #525564;
+}
+
+
+
+/*
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+																	**CONTACT FORM**
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*/
+
+#contactForm {
+	
+	width:100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	transition:500ms;
+	background: #F3F2F1;
+	height: 600px;
+	position:relative;
+
+}
+
+#contactForm form {
+	
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+	
+}
+
+#location {position:relative;}
+
+/*TEXT INPUT*/
+
+input[type="text"] {
+		
+	font: 15px 'Roboto', sans-serif;
+	font-weight: 300;
+	outline:none;
+	background: none;
+	height: 40px;
+	width: 70%;
+	border: 3px solid #525564;
+	margin: 0 auto;
+	color: #2e2e2e; 
+	padding: 10px;
+	text-transform: capitalize;
+	margin-bottom: 2%;
+	
+}
+
+input[type="email"] {
+		
+	font: 15px 'Roboto', sans-serif;
+	font-weight: 300;
+	outline:none;
+	background: none;
+	height: 40px;
+	width: 70%;
+	border: 3px solid #525564;
+	margin: 0 auto;
+	color: #2e2e2e; 
+	padding: 10px;
+	margin-bottom: 2%;
+	
+}
+
+input:focus {
+    background: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #F3F2F1 inset;
+}
+
+/*TEXTAREA INPUT*/
+
+textarea {
+	
+	font: 15px 'Roboto', sans-serif;
+	font-weight: 300;
+	outline:none;
+	background: none;
+	height: 120px;
+	width: 70%;
+	border: 3px solid #525564;
+	margin: 0 auto;
+	color: #2e2e2e; 
+	padding: 10px;
+	margin-bottom: 2%;
+	
+}
+
+/*PLACEHOLDER*/
+
+::-webkit-input-placeholder { 
+  color: #2e2e2e;
+}
+::-moz-placeholder {
+  color: #2e2e2e;
+}
+:-ms-input-placeholder { 
+  color: #2e2e2e;
+}
+:-moz-placeholder { 
+  color: #2e2e2e;
+}
+
+/*BUTTON INPUT*/
+
+input[type="submit"] {
+	
+	background: #525564;
+	width: 200px;
+	height: 30px;
+	border: 3px solid #525564;
+	font: 15px 'Roboto', sans-serif;
+	color:white;
+	font-weight: 400;
+	outline:none;
+	transition: 500ms;
+	cursor: pointer;
+	
+}
+
+input[type="submit"]:hover {
+	
+	background: none;
+	border: 3px solid #2e2e2e;
+	color:#2e2e2e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+﻿body {
+
+	
+
+}
+
+#wrapper {
+	
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+
+}
+
+
+a {	
+
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	font-weight: light;
+	
+}
+
+a:link {
+	
+	text-decoration: none;
+	color: #cfccc9;
+	letter-spacing: 1;
+}
+
+a:visited {
+
+	color: #cfccc9;
+}
+
+a:hover {
+
+	color:#f3f2f1;
+
+}
+
+/*______________________Text mark______________________*/
+
+::selection {
+  background: #cfccc9; 
+  color: white;
+}
+::-moz-selection {
+  background: #cfccc9; 
+  color: white;
+}
+
+/*______________________Scrollbar______________________*/
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-thumb:horizontal { width: 10px; }
+
+::-webkit-scrollbar-track {
+    background: #74828F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #525564;
+
+}
+
+#license {
+
+	display:flex;
+	justify-content:center;
+}
+
+#license a {color:#000000;transition:300ms;}
+
+#license a:hover {color:#C25B56;}
+
+
+
+
+
+
